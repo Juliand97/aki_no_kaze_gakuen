@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
-  base: '/aki_no_kaze_gakuen/',
+  base: '/',
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
