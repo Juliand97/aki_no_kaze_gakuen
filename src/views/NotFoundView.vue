@@ -1,0 +1,1 @@
+<template><div class="page not-found"><p class="eyebrow">Error · 404</p><h1 tabindex="-1">Esta página se llevó el viento.</h1><p>La dirección no pertenece al archivo de Aki no Kaze Gakuen.</p><RouterLink class="button primary" to="/">Volver al inicio</RouterLink></div></template>
