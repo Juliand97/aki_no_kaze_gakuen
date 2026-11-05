@@ -5,7 +5,7 @@ const router = createRouter({
   scrollBehavior: () => ({ top: 0 }),
   routes: [
     { path: '/', component: () => import('@/views/HomeView.vue'), meta: { title: 'Inicio' } },
-    { path: '/fichas-tecnicas', component: () => import('@/views/TechnicalSheetsView.vue'), meta: { title: 'Fichas técnicas' } },
+    { path: '/fichas-tecnicas/:username', component: () => import('@/views/TechnicalSheetsView.vue'), meta: { title: 'Fichas técnicas' } },
     { path: '/galeria', component: () => import('@/views/GalleryView.vue'), meta: { title: 'Galería' } },
     { path: '/integrantes', component: () => import('@/views/MembersView.vue'), meta: { title: 'Integrantes' } },
     { path: '/contacto', component: () => import('@/views/ContactView.vue'), meta: { title: 'Contacto' } },

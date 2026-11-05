@@ -3,7 +3,7 @@ import { onBeforeUnmount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 const open = ref(false)
 const route = useRoute()
-const links = [['Inicio', '/'], ['Fichas técnicas', '/fichas-tecnicas'], ['Galería', '/galeria'], ['Integrantes', '/integrantes'], ['Contacto', '/contacto']]
+const links = [['Inicio', '/'], ['Galería', '/galeria'], ['Integrantes', '/integrantes'], ['Contacto', '/contacto']]
 watch(() => route.fullPath, () => { open.value = false })
 watch(open, (value) => { document.body.classList.toggle('menu-open', value) })
 onBeforeUnmount(() => document.body.classList.remove('menu-open'))
