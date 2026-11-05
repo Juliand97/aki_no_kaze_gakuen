@@ -15,7 +15,6 @@ onBeforeUnmount(() => document.body.classList.remove('menu-open'))
     <button class="menu-button" type="button" :aria-expanded="open" aria-controls="site-nav" @click="open = !open">{{ open ? 'Cerrar' : 'Menú' }}</button>
     <nav id="site-nav" :class="['site-nav', { open }]" aria-label="Navegación principal">
       <RouterLink v-for="link in links" :key="link[1]" :to="link[1]">{{ link[0] }}</RouterLink>
-      <a href="https://www.instagram.com/akinokaze.collection/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
     </nav>
   </header>
 </template>
